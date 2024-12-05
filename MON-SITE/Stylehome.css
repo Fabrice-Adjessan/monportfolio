@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Fond blanc pour le body */
+  color: #333; /* Texte sombre pour le contenu principal */
+}
+
+header {
+  background-color: #333; /* Fond sombre */
+  padding: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Liens en blanc dans le header */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #bbb; /* Survol des liens en gris clair */
+}
+
+/* Section d'Accueil */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #ccc; /* Ligne de séparation */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* La photo de fond se place derrière le contenu */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; /* Centrer l'image */
+}
+
+.intro {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #333; /* Bouton sombre */
+  color: #fff; /* Texte blanc sur le bouton */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555; /* Couleur plus claire au survol */
+  color: #fff;
+}
+
+/* Section Compétences */
+#skills {
+  padding: 40px 20px;
+  background-color: #fff; /* Section blanche */
+  text-align: center;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+#skills p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.skill {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f4f4f4; /* Fond clair pour chaque compétence */
+  border-radius: 5px;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.skill p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
